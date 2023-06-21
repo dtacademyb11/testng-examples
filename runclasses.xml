@@ -7,12 +7,21 @@
 
         <classes>
             <class name="tests2.BasicDemo"/>
+            <class name="tests2.SmokeTests"/>
+            <class name="tests.AnnotationsDemo"/>
+
         </classes>
 
     </test>
 
 
-<!--    <test name="API tests">-->
+
+
+
+
+
+
+    <!--    <test name="API tests">-->
 
 <!--    </test>-->
 

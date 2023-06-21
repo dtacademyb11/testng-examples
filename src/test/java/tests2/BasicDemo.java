@@ -1,4 +1,4 @@
-package tests;
+package tests2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -56,7 +56,7 @@ public class BasicDemo {
     @BeforeMethod
     public void setUp(){
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
         driver.manage().window().maximize();
     }
 

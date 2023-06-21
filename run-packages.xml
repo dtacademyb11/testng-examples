@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Run Specific Package">
+
+    <test name="Packages">
+
+         <packages>
+             <package name="tests2"/>
+         </packages>
+
+    </test>
+    
+
+
+</suite>
