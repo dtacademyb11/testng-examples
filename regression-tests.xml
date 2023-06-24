@@ -6,6 +6,9 @@
          <packages>
              <package name="tests.ui"/>
              <package name="tests.backend"/>
+             <package name="tests2"/>
+<!--             <package name=".*"/>-->
+
          </packages>
 
     </test>

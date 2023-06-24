@@ -1,4 +1,4 @@
-package tests;
+package tests.backend;
 
 import org.testng.annotations.Test;
 
@@ -13,8 +13,8 @@ public class ExecutionOrder {
         System.out.println("test 1");
     }
 
-    @Test (priority = 20, enabled = false )
-    public void test2(){
+    @Test (priority = 20)
+    public void test2_testUsername(){
         System.out.println("test 2");
     }
 
@@ -24,7 +24,7 @@ public class ExecutionOrder {
     }
 
     @Test (priority = 4)
-    public void test(){
+    public void tc_test002_ui_testUsername(){
         System.out.println("test");
     }
 

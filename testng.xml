@@ -11,6 +11,14 @@
 
     </test>
 
+    <test name="DB tests">
+
+        <classes>
+            <class name="tests2.BasicDemo"/>
+        </classes>
+
+    </test>
+
 
 <!--    <test name="API tests">-->
 

@@ -6,9 +6,8 @@
     <test name="UI tests">
 
         <classes>
-            <class name="tests2.BasicDemo"/>
-            <class name="tests2.SmokeTests"/>
             <class name="tests.ui.AnnotationsDemo"/>
+            <class name="tests2.SmokeTests"/>
 
         </classes>
 

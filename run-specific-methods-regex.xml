@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Smoke Test Suite">
+<!--    suite represents the entire collection of tests that as a whole represent certain category of tests
+   such as smoke or regression test suite-->
+
+    <test name="UI tests">
+
+        <classes>
+
+            <class name="tests.backend.ExecutionOrder">
+                <methods>
+<!--                    starts with-->
+<!--                    <include name="test.*"/>-->
+<!--                    ends with -->
+<!--                    <include name=".*testUsername"/>-->
+<!--                    contains -->
+                    <include name=".*ui.*"/>
+
+<!--                    regular expressions can be used in include,exclude and package tags-->
+
+                </methods>
+            </class>
+
+
+
+        </classes>
+
+    </test>
+
+
+
+
+
+
+
+
+    <!--    <test name="API tests">-->
+
+<!--    </test>-->
+
+
+
+</suite>
