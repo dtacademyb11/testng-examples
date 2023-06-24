@@ -21,14 +21,14 @@ public class SmokeTests {
 
    WebDriver driver;
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void setUp(){
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
         driver.manage().window().maximize();
     }
 
-    @AfterMethod
+    @AfterMethod (alwaysRun = true)
     public void tearDown(){
         driver.quit();
     }
@@ -57,6 +57,7 @@ public class SmokeTests {
     }
 
 
+    @Test (groups = "flaky")
     public void testViewAllOrdersLink(){
 
 
@@ -95,6 +96,7 @@ public class SmokeTests {
     }
 
 
+    @Test (groups = {"flaky", "smoke"})
     public void testOrderLink(){
 
 

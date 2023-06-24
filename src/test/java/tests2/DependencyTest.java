@@ -14,7 +14,7 @@ public class DependencyTest {
 
     WebDriver driver;
 
-    @Test ()
+    @Test (groups = "flaky")
     public void testLogin(){
 
         driver = new ChromeDriver();
@@ -38,8 +38,13 @@ public class DependencyTest {
         Assert.assertTrue(driver.findElement(By.linkText("Logout")).isDisplayed());
     }
 
-    @Test (dependsOnMethods = "testLogin")
+    @Test (dependsOnMethods = "testLogin", groups = "flaky") // the method that this method depends on should also marked with the same group
     public void testDeleteSelectedButton(){
+        Assert.assertTrue(driver.findElement(By.id("ctl00_MainContent_btnDelete")).isDisplayed());
+    }
+
+    @Test (dependsOnGroups = "flaky") // the method that this method depends on should also marked with the same group
+    public void testDeleteButton(){
         Assert.assertTrue(driver.findElement(By.id("ctl00_MainContent_btnDelete")).isDisplayed());
     }
 

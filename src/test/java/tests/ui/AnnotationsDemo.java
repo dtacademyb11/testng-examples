@@ -36,17 +36,17 @@ public class AnnotationsDemo {
         System.out.println("Tear down class");
     }
 
-    @BeforeMethod     // @BeforeTest vs @BeforeMethod  -> before <test> tag vs before each @Test method
+    @BeforeMethod(alwaysRun = true)     // @BeforeTest vs @BeforeMethod  -> before <test> tag vs before each @Test method
     public void setUpMethod(){
         System.out.println("Set up method");
     }
 
-    @AfterMethod
+    @AfterMethod (alwaysRun = true)
     public void teardownMethod(){
         System.out.println("Tear down method");
     }
 
-    @Test
+    @Test (groups = {"flaky", "smoke"})
     public void test1(){
         System.out.println("test 1");
     }
@@ -56,7 +56,7 @@ public class AnnotationsDemo {
         System.out.println("test 2");
     }
 
-    @Test
+    @Test (groups = "flaky")
     public void test3(){
         System.out.println("test 3");
     }

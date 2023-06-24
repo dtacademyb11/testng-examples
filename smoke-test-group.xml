@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Flaky Test Suite">
+
+
+    <test name="UI tests">
+
+        <groups>
+            <run>
+                <include name="smoke"/>
+<!--                <include name="flaky"/>-->
+            </run>
+
+        </groups>
+
+       <packages>
+           <package name="tests.backend"></package>
+           <package name="tests.ui"></package>
+           <package name="tests2"></package>
+       </packages>
+    </test>
+
+
+</suite>
