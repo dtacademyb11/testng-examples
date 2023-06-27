@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Smoke Test Suite">
+
+
+
+    <listeners>
+        <listener class-name="tests2.MyListener"></listener>
+    </listeners>
+
+    <test name="UI tests">
+
+        <classes>
+            <class name="tests.ui.AnnotationsDemo"/>
+            <class name="tests2.SmokeTests"/>
+
+        </classes>
+
+    </test>
+
+
+
+
+</suite>
